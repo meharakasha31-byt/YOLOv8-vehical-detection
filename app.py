@@ -85,7 +85,7 @@ if uploaded_file is not None:
             # Draw bounding boxes and labels on the image
             im_array = r.plot() # plot a BGR numpy array of predictions
             im_rgb = cv2.cvtColor(im_array, cv2.COLOR_BGR2RGB) # Convert to RGB for display
-            st.image(im_rgb, caption='Detected Objects', use_column_width=True)
+            st.image(im_rgb, caption='Detected Objects', use_container_width=True)
 
             # Optionally display detection details
             if r.boxes:
